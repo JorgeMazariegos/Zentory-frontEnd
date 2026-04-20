@@ -1,0 +1,171 @@
+.anchor-pane {
+    -fx-background-color: #f0f3f7;
+}
+
+#titleLabel{
+    -fx-font-size: 28px;
+    -fx-text-fill: #2c3e50;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 2);    
+}
+
+#logo {
+    -fx-scale-x: 1.7; 
+    -fx-scale-y: 1.7;
+}
+
+.vbox{
+    -fx-background-color: #d1dae3;
+    -fx-background-radius: 0 10 10 0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.5, 0, 0);
+    -fx-spacing: 15;
+}
+
+.pane{    
+    -fx-background-color: #d1dae3;/*rgba(20, 92, 164, 0.1);*/
+    -fx-padding: 16 20 15 20;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.5, 0, 0);
+}
+
+.pane:hover{
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.12), 18, 0, 0, 5);
+    -fx-translate-y: -2;          /* subtle upward movement */
+}
+
+.toggle-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-border-color: transparent;
+    -fx-border-width: 0 0 0 4px;        /* reserve space for the accent line */
+    -fx-padding: 12 20 12 16;            /* left padding = 16 (12 + 4 for line) */
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 16px;
+    -fx-alignment: CENTER;
+    -fx-cursor: hand;
+}
+
+/* Hover effect – very light blue background */
+.toggle-button:hover {
+    -fx-background-color: rgba(20, 92, 164, 0.05);
+    -fx-text-fill: #145ca4;
+}
+
+/* Selected state – left accent line + subtle background */
+.toggle-button:selected {
+    -fx-background-color: rgba(20, 92, 164, 0.08);  /* very light blue tint */
+    -fx-border-color: transparent transparent transparent #145ca4;
+    -fx-text-fill: #145ca4;
+    -fx-font-weight: bold;
+}
+
+/* Optional: pressed effect */
+.toggle-button:pressed {
+    -fx-background-color: rgba(20, 92, 164, 0.15);
+}
+
+.title-top-card {
+    -fx-text-fill: #7f8c8d;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+}
+
+.value-top-card {
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 28px;
+    -fx-padding: 0 0 0 16;
+    -fx-font-weight: bold;
+}
+
+/* ============================================================================= */
+/* ============================== Charts ======================================= */
+/* ============================================================================= */
+
+.chart-pane {
+    -fx-background-color: #d1dae3;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.5, 0, 0);
+    -fx-padding: 15;
+}
+
+.chart-bar {
+    -fx-translate-x: 0;
+}
+
+.chartLine {
+    -fx-padding: 10;
+    -fx-background-radius: 8;            
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.5, 0, 0);
+    -fx-background-color: #d1dae3;
+}
+
+.chartLine-vertical-grid-lines,
+.chartLine-horizontal-grid-lines {
+    -fx-stroke: a0b8cc;
+    -fx-stroke-width: 1px;
+    /*-fx-stroke-dash-array: 2 5;*/  
+}
+
+/* Axis lines – thicker */
+.axis {
+    -fx-stroke: #2c3e50;
+    -fx-stroke-width: 2;
+}
+
+/* Tick labels – larger and bolder */
+.axis .axis-tick-label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #145ca4;
+}
+
+.chartLine-series-line {
+    -fx-stroke: #145ca4;
+    -fx-stroke-width: 4px;
+    -fx-stroke-smooth: true;
+}
+
+.chartLine-line-symbol {
+    -fx-background-color: white, #145ca4;
+    -fx-background-insets: 0, 3;
+    -fx-background-radius: 8px;
+    -fx-padding: 8px;
+    -fx-scale-shape: true;
+}
+
+/* Legend – with background */
+.chartLine-legend {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-color: #ddd;
+    -fx-border-radius: 10;
+    -fx-padding: 8 15;
+}
+
+/* ============================================================================= */
+/* ============================== Tables ======================================= */
+/* ============================================================================= */
+
+.table-view {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 5, 0, 0, 2);
+    -fx-padding: 5;
+    
+}
+.table-view .column-header {
+    -fx-background-color: #145ca4;   
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.table-row-cell:odd {
+    -fx-background-color: #f9f9f9;
+}
+.table-row-cell:selected {
+    -fx-background-color: #4a90e2;
+    -fx-text-fill: white;
+}

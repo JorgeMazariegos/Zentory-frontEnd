@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" styleClass="anchor-pane" stylesheets="@../../styles/login.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="umg.zentoryapp.LoginController">
+   <children>
+      <Pane layoutX="381.0" layoutY="239.0" prefHeight="433.0" prefWidth="439.0" styleClass="pane" AnchorPane.bottomAnchor="128.0" AnchorPane.leftAnchor="380.0" AnchorPane.rightAnchor="381.0" AnchorPane.topAnchor="239.0">
+         <children>
+            <Button fx:id="primaryButton" layoutX="22.0" layoutY="190.0" onAction="#switchToSecondary" prefHeight="54.0" prefWidth="395.0" styleClass="button-login" text="INICIAR SESIÓN" />
+            <Button layoutX="26.0" layoutY="272.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="395.0" styleClass="button-create" text="CREAR CUENTA" />
+            <TextField layoutX="26.0" layoutY="101.0" prefHeight="42.0" prefWidth="395.0" promptText="🔒 Contraseña" styleClass="password-field" />
+            <Hyperlink layoutX="22.0" layoutY="386.0" text="Olvidó su contraseña?" />
+            <TextField layoutX="22.0" layoutY="34.0" prefHeight="42.0" prefWidth="395.0" promptText="🖂 Email" />
+         </children></Pane>
+      <ImageView id="logo" fitHeight="150.0" fitWidth="217.0" layoutX="515.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

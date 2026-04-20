@@ -1,0 +1,17 @@
+.anchor-pane {
+    -fx-background-color: #f0f3f7;
+}
+
+#titleLabel{
+    -fx-font-size: 28px;
+    -fx-text-fill: #2c3e50;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 2);    
+}
+
+.pane{
+    -fx-background-color: white;
+    -fx-padding: 16 20 15 20;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.5, 0, 0);
+}

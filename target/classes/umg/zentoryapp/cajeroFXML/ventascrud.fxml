@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+
+<AnchorPane fx:id="contentArea" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="985.0" styleClass="anchorpane" stylesheets="@../../../styles/ventascrud.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="umg.zentoryapp.cajeroControllers.VentascrudController">
+   <children>
+      <HBox layoutY="-2.0" maxWidth="985.0" prefHeight="62.0" prefWidth="985.0" styleClass="hbox">
+         <children>
+            <Label styleClass="header-label" text="Registrar Venta" textAlignment="CENTER" />
+            <Region prefHeight="40.0" prefWidth="501.0" styleClass="dashed-separator" />
+            <Label styleClass="info-label" text="Nombre Vendedor" textAlignment="CENTER" />
+            <Separator maxHeight="8.0" maxWidth="6.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="6.0" HBox.hgrow="NEVER" />
+            <Label styleClass="info-label" text="Hora (?" textAlignment="CENTER" />
+            <Separator orientation="VERTICAL" prefHeight="20.0" prefWidth="2.0" />
+            <Label styleClass="info-label" text="Tienda" />
+         </children>
+      </HBox>
+      <Pagination fx:id="pagination" layoutY="60.0" maxHeight="-Infinity" maxPageIndicatorCount="3" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pageCount="3" prefHeight="738.0" prefWidth="985.0" />
+   </children>
+</AnchorPane>

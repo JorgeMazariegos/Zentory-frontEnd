@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1200.0" styleClass="anchor-pane" stylesheets="@../../../styles/menubar.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="umg.zentoryapp.adminControllers.MenubarController">
+   <children>
+      <VBox prefHeight="800.0" prefWidth="215.0" styleClass="vbox">
+         <children>
+            <ImageView fx:id="logo" fitHeight="181.0" fitWidth="215.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../logo.png" />
+               </image>
+            </ImageView>
+            <ToggleButton fx:id="dashboardBtn" mnemonicParsing="false" onAction="#showDashboard" prefHeight="49.0" prefWidth="215.0" styleClass="menu-button" text="Dashboard" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../dashboardIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </ToggleButton>
+            <ToggleButton fx:id="productsBtn" mnemonicParsing="false" onAction="#showProductos" prefHeight="49.0" prefWidth="305.0" styleClass="menu-button" text="Productos">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../productsIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </ToggleButton>
+            <ToggleButton fx:id="ventasBtn" mnemonicParsing="false" prefHeight="53.0" prefWidth="219.0" styleClass="menu-button" text="Ventas      " textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../sellsIcon2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </ToggleButton>
+            <ToggleButton fx:id="logOffBtn" mnemonicParsing="false" onAction="#logOut" prefHeight="49.0" prefWidth="217.0" styleClass="menu-button" text="Cerrar Sesión" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../logOff.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </ToggleButton>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="contentArea" layoutX="215.0" layoutY="2.0" prefHeight="800.0" prefWidth="985.0" />
+   </children>
+</AnchorPane>

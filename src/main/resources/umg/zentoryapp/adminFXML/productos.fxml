@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="985.0" styleClass="anchor-pane" stylesheets="@../../../styles/productos.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="umg.zentoryapp.adminControllers.ProductosController">
+   <children>
+      <Label fx:id="titleLabel" layoutX="423.0" layoutY="13.0" prefHeight="40.0" prefWidth="140.0" text="Productos" />
+      <Button layoutX="820.0" layoutY="13.0" mnemonicParsing="false" styleClass="button-addProduct" text="➕ Agregar producto" />
+      <Pane layoutX="12.0" layoutY="64.0" prefHeight="730.0" prefWidth="962.0" styleClass="pane">
+         <children>
+            <TableView layoutX="14.0" layoutY="64.0" prefHeight="658.0" prefWidth="933.0" styleClass="products-table">
+              <columns>
+                  <TableColumn prefWidth="78.0" text="Código" />
+                <TableColumn prefWidth="539.0" text="Producto" />
+                <TableColumn prefWidth="153.0" text="Categoria" />
+                  <TableColumn prefWidth="79.0" styleClass="stock-cell" text="Stock" />
+                  <TableColumn prefWidth="83.0" styleClass="price-cell" text="Precio" />
+              </columns>
+            </TableView>
+            <HBox alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="48.0" prefWidth="933.0" styleClass="hbox">
+               <children>
+                  <TextField minHeight="-Infinity" prefHeight="33.0" prefWidth="120.0" promptText="Código" styleClass="search-text-field" />
+                  <Separator minWidth="-Infinity" orientation="VERTICAL" prefHeight="200.0" styleClass="separator-vertical" />
+                  <TextField minHeight="-Infinity" prefHeight="33.0" prefWidth="257.0" promptText="Nombre" styleClass="search-text-field" />
+                  <Separator minWidth="-Infinity" orientation="VERTICAL" prefHeight="200.0" styleClass="separator-vertical" />
+                  <ComboBox minHeight="-Infinity" prefHeight="33.0" prefWidth="146.0" promptText="Categoria" styleClass="search-combo-box" />
+                  <Separator minWidth="-Infinity" orientation="VERTICAL" prefHeight="200.0" styleClass="separator-vertical" />
+                  <Button minHeight="-Infinity" mnemonicParsing="false" prefHeight="33.0" styleClass="search-button" text="🔍 Buscar Producto" />
+                  <Separator minWidth="-Infinity" orientation="VERTICAL" prefHeight="200.0" styleClass="separator-vertical" />
+                  <Button minHeight="-Infinity" mnemonicParsing="false" prefHeight="33.0" prefWidth="132.0" styleClass="clear-button" text="Limpiar Filtros" />
+               </children></HBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

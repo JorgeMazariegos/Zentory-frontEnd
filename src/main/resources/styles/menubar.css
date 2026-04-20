@@ -1,0 +1,98 @@
+.window-titlebar {
+    -fx-background-color: #003399;    
+    -fx-padding: 8 15 8 15;
+    -fx-spacing: 10;
+    -fx-alignment: center-left;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 0, 1);
+    -fx-border-color: transparent transparent #2c3e50 transparent;
+    -fx-border-width: 0 0 1px 0;
+}
+
+.window-icon {
+    -fx-fit-width: 20;
+    -fx-fit-height: 20;
+}
+
+.window-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-padding: 4;
+    -fx-cursor: hand;
+    -fx-background-radius: 5;
+    -fx-min-width: 30;
+    -fx-min-height: 25;
+    -fx-alignment: center;
+}
+
+.window-button-minimize:hover,
+.window-button-maximize:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+}
+
+.window-button-close:hover {
+    -fx-background-color: #e74c3c; 
+    -fx-text-fill: white;
+}
+
+.window-button:pressed {
+    -fx-translate-y: 1;
+}
+
+.window-title {
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 5 0 0;
+}
+
+.window-spacer {
+    -fx-pref-width: 0;
+    -fx-hgrow: always;
+}
+
+.anchor-pane {
+    -fx-background-color: #f0f3f7;
+}
+
+.vbox{
+    -fx-background-color: #d1dae3;
+    -fx-background-radius: 0 10 10 0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.5, 0, 0);
+    -fx-spacing: 15;
+}
+
+#logo {
+    -fx-scale-x: 1.7; 
+    -fx-scale-y: 1.7;
+}
+
+.menu-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-border-color: transparent;
+    -fx-border-width: 0 0 0 4px; 
+    -fx-padding: 12 20 12 16;      
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 16px;
+    -fx-alignment: CENTER;
+    -fx-cursor: hand;
+}
+
+.menu-button:hover {
+    -fx-background-color: rgba(20, 92, 164, 0.05);
+    -fx-text-fill: #145ca4;
+}
+
+
+.menu-button:selected {
+    -fx-background-color: rgba(20, 92, 164, 0.08); 
+    -fx-border-color: transparent transparent transparent #145ca4;
+    -fx-text-fill: #145ca4;
+    -fx-font-weight: bold;            
+}
+
+.menu-button:pressed {
+    -fx-background-color: rgba(20, 92, 164, 0.15);
+}

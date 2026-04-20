@@ -1,0 +1,84 @@
+.anchorpane{
+    -fx-background-color: #f0f3f7;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 12, 0, 0, 4);
+}
+
+.hbox {
+    -fx-background-color: #193e7a;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 12, 0, 0, 4);
+    -fx-alignment: center;
+}
+
+.separator{
+    -fx-max-height: 20;
+    -fx-padding: 0 10 0 10;
+}
+
+.separator:vertical .line{
+    -fx-background-color: gray;
+    -fx-pref-width: 1px;
+    -fx-border-color: null;
+}
+
+.header-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-padding: 0 0 0 0;
+}
+
+.info-label {
+    -fx-font-size: 15px;
+    -fx-text-fill: white;
+    -fx-padding: 6 0 4 0;
+    -fx-letter-spacing: 0.5px;
+}
+
+.pagination {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-page-information-visible: false;
+}
+
+.pagination > .pagination-control > .control-box {
+    -fx-spacing: 8px;
+    -fx-background-color: transparent;
+    -fx-alignment: center;
+}
+
+.pagination > .pagination-control > .control-box > .button {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cbd5e1;
+    -fx-padding: 6px;
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+}
+
+.pagination .number-button {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 8px;
+    -fx-border-color: #cbd5e1;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow(gaussian, rgba(59, 130, 246, 0.3), 6, 0, 0, 2);
+}
+
+.pagination .number-button:selected {   
+    -fx-border-color: #3b82f6;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(59, 130, 246, 0.3), 6, 0, 0, 2);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.pagination > .pagination-control > .control-box > .button:selected {
+    -fx-background-color: #3b82f6;
+    -fx-text-fill: white;
+    -fx-border-color: #3b82f6;
+}
+
+.pagination > .pagination-control > .control-box > .button:disabled {
+    -fx-opacity: 0.5;
+    -fx-cursor: default;
+}

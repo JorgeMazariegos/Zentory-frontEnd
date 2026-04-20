@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1200.0" styleClass="anchor-pane" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="umg.zentoryapp.cajeroControllers.MenubarCajeroController">
+   <children>
+      <VBox prefHeight="800.0" prefWidth="215.0" styleClass="vbox">
+         <children>
+            <ImageView fx:id="logo" fitHeight="181.0" fitWidth="215.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../logo.png" />
+               </image>
+            </ImageView>
+            <ToggleButton fx:id="ventasBtn" mnemonicParsing="false" onAction="#showVentas" prefHeight="54.0" prefWidth="216.0" styleClass="menu-button" text="Ventas" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../sellsIcon2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </ToggleButton>
+            <ToggleButton fx:id="tareasBtn" mnemonicParsing="false" onAction="#showTareas" prefHeight="49.0" prefWidth="305.0" styleClass="menu-button" text="Tareas">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../tareas.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </ToggleButton>
+            <ToggleButton fx:id="metasBtn" mnemonicParsing="false" prefHeight="55.0" prefWidth="215.0" styleClass="menu-button" text="Metas" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../metas.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </ToggleButton>
+            <ToggleButton fx:id="logOffBtn" mnemonicParsing="false" onAction="#logOut" prefHeight="54.0" prefWidth="217.0" styleClass="menu-button" text="Cerrar Sesión" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../logOff.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </ToggleButton>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="contentArea" layoutX="215.0" layoutY="2.0" prefHeight="800.0" prefWidth="985.0" />
+   </children>
+   <stylesheets>
+      <URL value="@../../../styles/menubarcajero.css" />
+      <URL value="@../../../styles/menubar.css" />
+   </stylesheets>
+</AnchorPane>

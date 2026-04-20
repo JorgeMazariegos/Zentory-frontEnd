@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="800.0" prefWidth="985.0" styleClass="anchor-pane" stylesheets="@../../styles/agregarproducto.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25" fx:controller="umg.zentoryapp.AgregarProductoController">
+   <children>
+      <Pagination prefHeight="800.0" prefWidth="995.0" />
+   </children>
+</AnchorPane>
